@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+    <head>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+	<link rel="stylesheet" href="style.css" type="text/css"/>  
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<title>Hype Performing Arts Academy</title>  
+    </head>  
+    <body>  
+	<div id="nav">
+	    <ul>
+		<li>
+		    <a href="#">Home</a>
+		</li>
+		<li>
+		    <a href="#">About</a>
+		</li>
+		<li id="menu">
+		    <a href="#">Portfolio</a>
+		    <div id="dropDown">
+			<a href="#">Pictures</a>
+			<a href="#">Music</a>
+			<a href="#">Other</a>
+		    </div>
+		</li>
+		<li>
+		    <a href="#">Contact</a>
+		</li>
+	    </ul>
+	</div>
+	<script>
+	    jQuery(document).ready(function(){
+		var maxHeight = $('#dropDown').height();
+	
+		$('#dropDown').css('height', '0');
+		$('#dropDown').css('display', 'block');
+	
+		$('#menu').mouseenter(function() {
+		    $('#dropDown').stop().animate({height:maxHeight},{duration:1250, easing:"easeout"});
+		})
+		$('#menu').mouseleave(function() {
+		    $('#dropDown').stop().animate({height:0},{duration:1250, easing:"easein"});
+		})
+	    });
+	</script>
+    </body>  
+</html> 

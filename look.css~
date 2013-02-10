@@ -1,0 +1,50 @@
+div
+{
+}
+body
+{
+	
+}
+#navHolder
+{
+	//margin-left:50px;
+	width:200px;
+	height:100%;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:auto;
+	z-index:0;
+	display:inline;
+	background-image:url("bg.png");
+}
+#nav
+{
+	position:fixed;
+	top:200px;
+	left:30px;
+	right:auto;
+	bottom:auto;
+}
+#contentWrap
+{
+	width:autopx;
+	height:5000px;
+	position:relative;
+	top:-8px;
+	left:192px;
+	//margin-left:200px;
+	border: 1px solid #F0F0F0;
+	border-width: 0px 1px 0px 1px;
+	z-index:1;
+	background-image:url("middlebg.png");
+}
+#content
+{
+	padding:50px;
+	padding-top:35px;
+	height:100%;
+	
+	//background-color:black;
+}
