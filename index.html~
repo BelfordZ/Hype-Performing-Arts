@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<script type="text/javascript" src="jscripts.js"></script>
+<link rel="stylesheet" type="text/css" href="look.css"/>
+</head>
+
+<body>
+  <section id="navHolder">
+    <div id="nav">
+      <div id="home" >
+	Home
+      </div>
+
+      <div id="Classes">
+	Classes
+      </div>
+    </div>
+  </section>
+
+  <section id="contentWrap">
+    <div id="content">
+    </div>
+  </section>
+</body>
+
+<html>
